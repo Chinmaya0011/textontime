@@ -9,12 +9,13 @@ const TextColor = () => {
     useEffect(() => {
         const tDate = new Date();
       const currTime = tDate.getHours();
+      //time based text color changing
      if (currTime >= 17 || currTime <= 5) {
     setTextClr("black");
      } else {
        setTextClr("white");
      }
-        
+      //toggle for 5 second interval text color changing  
   setCurrentDate(tDate.toLocaleString());
   const colorToggleInterval = setInterval(() => {
     setTextClr(prevColor => (prevColor === "white" ? "black" : "white"));
