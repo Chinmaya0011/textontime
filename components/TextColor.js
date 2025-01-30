@@ -16,6 +16,11 @@ const TextColor = () => {
      }
         
   setCurrentDate(tDate.toLocaleString());
+  const colorToggleInterval = setInterval(() => {
+    setTextClr(prevColor => (prevColor === "white" ? "black" : "white"));
+}, 5000);
+return () => clearInterval(colorToggleInterval);
+
     }, []);
 
     return (
