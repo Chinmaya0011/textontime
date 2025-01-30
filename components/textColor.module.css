@@ -1,0 +1,36 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    background-color:#808080;
+   
+    font-size: 24px;
+}
+
+.paragraph {
+    font-size: 18px;
+    color: #34495e;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+}
+
+.table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
